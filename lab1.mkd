@@ -15,5 +15,10 @@ Thực hiện gộp nhiều commit lại với nhau
 Thực hiện sao chép 1 branch 
 ![alt text](<sao chep 1 branch-1.png>)
 Thực hiện rebase main vào data 
-
-
+![alt text](<rebase main vào beta-1.png>)
+Thuc hien lenh merge beta vao main
+![alt text](<gộp beta vào main-1.png>)
+Detele 1 commit
+![alt text](<xoa commit B2-1.png>)
+Revert commit 
+![alt text](<revert commit.png>)
