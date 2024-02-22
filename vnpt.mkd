@@ -1,0 +1,40 @@
+#heading1#
+- Repository là nơi lưu trữ code hình ảnh hay mọi thứ liên quan đến dự án 
+- Có 2 loại repository trong github là Local Repo và Remote Repo
+ **Local repository**: là 1 repository nằm trên máy tính cá nhân.
+ **Remote repository**: là 1 repository để chia sẻ với nhiều người thường được bố trí trên server
++ Các lệnh cơ bản của git
+- **git init** [project name]: tạo một kho lưu trữ trong một thư mục có tên là project name
+- **git clone**:dùng để copy một remote repository về máy 
+- **git add**: dữ liệu được đầy vào vùng **staging**
+- **git commit**: dữ liệu được đẩy vào vùng **Local repository****
+- **git commit -a**: dữ liệu được đẩy trực tiếp vào vùng **Local repository**
+- **git config** : lệnh được sử dụng để thiết lập tên đăng nhập và email 
+- **git status**: check trạng thái của các file như **untracked** và **tracked**
+- **git push**: dùng để đẩy dữ liệu từ **Local repository** sang **Remote repository**
+- **git reset <file>**: dùng để hủy một file ở trong vùng **staging**
+- **git reset <commit>**: dùng để hủy một commit từ **Local repository** 
+- **git diff**: dùng để kiểm tra sự thay đổi của thư mực
+- **git diff HEAD**: dùng để kiểm tra sự thay đổi của **Local repository** với **working space**
+- **git fetch**: dùng để tải dũ liệu từ **Remote repository** xuống **Local repository**
+- **git rm**: Xóa file ra khỏi git
+- **git checkout**: dùng để khi muốn truy cập đến nhánh khác
+- **git merge**:dùng để hợp nhất các nhánh lại với nhau 
+- **git rebase**: lệnh này dùng để gộp các commit từ nhánh này vào nhánh khác lại với nhau 
++ WORK FLOW:
+- **staging**: khi commit thì các git sẽ lưu lại một bản chụp được là snapshot ở vùng staging
+-Dữ liệu từ workspace được add vào vùng staging. Ở vùng staging khi git commit thì sẽ tạo ra snapshot lưu trữ những thay đổi ở vùng staging. Tiếp tục dữ liệu sẽ đi từ staging đến local repository. Dữ liệu sẽ được đẩy lên remote repository bằng lệnh git push. Khi muốn lấy dữ liệu từ remote repository về máy tính thì dùng git clone/pull. 
++ GIT WORKFLOW
+-**Master branch** nhánh này có sẵn trong git thường được sử dụng là nhanh to nhất
+-**Hotfix** Nhánh này được tạo ra để sửa lỗi khẩn cấp để sửa lỗi một cách nhanh chóng trên môi trường production
+-**Release** Nhánh này được tạo ra để cho dev kiểm tra lại trước khi đưa lên master branch
+-**Develop** được khởi tạo từ master branches
+-**Feature** được khởi tạo từ develop branches các feature branches được merge vào develop branches
++ RESOLVE MERGED CONFLICT
+các trường hợp có thể gây ra conflict:
+- Nhiều developer sửa đổi cùng một dòng của tệp và cố gắng merge các thay đổi
+- Một developer xóa một tệp trong khi một developer khác sửa đổi tệp đó hoặc đổi tên tệp trong khi một developer khác đang sửa đổi tệp đó
+- Cùng sửa đổi 1 đoạn code chức năng ở trong cùng 1 file code
+Kiểm tra xung đột bằng lệnh **git status**  các tệp có xung đột được liệt kê và đánh dấu là "both moified".
+Khi xung đột thì đoạn xung đột thường được đánh dấu là '<<<<'; '>>>>>';'======'
+Cách giải quyết: chỉnh sửa code sau đó **git add** sau đó **git merge** và rồi push lên 
