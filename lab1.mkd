@@ -1,2 +1,12 @@
 THỰC HIỆN CÁCH LỆNH
-**git branch** ![check branch](check branch.png)
+
+**git branch** 
+![alt text](image.png)
+**git checkout** and **git push**
+![alt text](<Screenshot from 2024-02-22 16-33-41-1.png>)
+**git log**
+![alt text](<Screenshot from 2024-02-22 16-39-40-1.png>)
+**git log --oneline**: xem so luong commit and code SHA 
+![alt text](<Screenshot from 2024-02-22 16-42-15-1.png>)
+
+

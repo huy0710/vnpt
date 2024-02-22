@@ -38,3 +38,9 @@ các trường hợp có thể gây ra conflict:
 Kiểm tra xung đột bằng lệnh **git status**  các tệp có xung đột được liệt kê và đánh dấu là "both moified".
 Khi xung đột thì đoạn xung đột thường được đánh dấu là '<<<<'; '>>>>>';'======'
 Cách giải quyết: chỉnh sửa code sau đó **git add** sau đó **git merge** và rồi push lên 
+**.gitignore** là 1 file dùng để chưa các file hay thư mục không được đẩy lên repository
+- nếu cần ignore 1 file: tên file
+- nếu cần ignore 1 folder: tên folder/
+- nếu cần ingore 1 file trong folder: dường dần của file trong folder
+khi đã up lên github mà muốn ingnore file đó thì dùng **git rm -r --cached /path/to/file_or_folder**
+xong add lại
