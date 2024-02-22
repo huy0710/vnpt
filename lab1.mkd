@@ -1,0 +1,2 @@
+THỰC HIỆN CÁCH LỆNH
+**git branch** ![check branch](check branch.png)
