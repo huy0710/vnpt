@@ -44,3 +44,4 @@ Cách giải quyết: chỉnh sửa code sau đó **git add** sau đó **git mer
 - nếu cần ingore 1 file trong folder: dường dần của file trong folder
 khi đã up lên github mà muốn ingnore file đó thì dùng **git rm -r --cached /path/to/file_or_folder**
 xong add lại
+**Fork**: Lấy dự án của repo của người khác về repo của mình. Mình có thể theo dõi trực tiếp sự thay đổi của repo của người khác bằng câu lệnh **git remote add + link của repo gốc** sau đó merge repo gốc vào main của mình. 
