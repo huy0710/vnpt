@@ -11,7 +11,7 @@ THỰC HIỆN CÁCH LỆNH
 Thực hiện thêm file text b2 trên github
 ![alt text](<git add git status git commit git push-1.png>)
 Thực hiện gộp nhiều commit lại với nhau 
-![alt text](<gộp thành nhiều commit-1.png>)
+![alt text](<gop cac commit.png>)
 Thực hiện sao chép 1 branch 
 ![alt text](<sao chep 1 branch-1.png>)
 Thực hiện rebase main vào data 
